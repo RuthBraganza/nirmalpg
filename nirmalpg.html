@@ -1,0 +1,302 @@
+!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmal PG</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Bar */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+        }
+
+        .nav button {
+            color: white;
+            background-color: #333;
+            border: none;
+            padding: 1rem 1.5rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav button:hover, .nav button.active-tab {
+            background-color: #4CAF50;
+            transform: scale(1.05);
+        }
+
+        /* Main Content */
+        .container {
+            padding: 2rem;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content h2 {
+            color: #4CAF50;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Nirmal PG: Your Home Away from Home</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <button onclick="showContent('about')" class="active-tab">About Us</button>
+        <button onclick="showContent('services')">Services</button>
+        <button onclick="showContent('features')">Features</button>
+        <button onclick="showContent('gallery')">Gallery</button>
+        <button onclick="showContent('contact')">Contact</button>
+        <button onclick="showContent('warnings')">⚠️Warnings</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Us Section -->
+        <div id="about" class="content active">
+            <img src="images/IMG-20230223-WA0000.jpg" alt="About Us">
+            <h2>About Us</h2>
+            <p>At Nirmal PG, we prioritize creating a welcoming and homely environment for all residents.</p>
+            <p>At Nirmal PG, we understand the importance of a comfortable and affordable living space for students and working professionals.<br>Our guest rental service is dedicated to providing cozy rooms that cater to single, double and triple occupancy, ensuring a welcoming environment that feels like home. With a focus on cleanliness and security, Nirmal PG offers a seamless stay that prioritizes your comfort and convenience.<br></p>
+            <p>             <br>          </p>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services" class="content">
+            <h2>Services</h2>
+            <ul>
+                <li><strong>Accommodation Options:</strong>
+                    <ul>
+                        <li>Single and Twin Occupancy with attached bathrooms.</li>
+                        <li>Lockable storage space for each bed.</li>
+                        <li>Ample place to dry clothes in the sun on the terrace.</li>
+                    </ul>
+                </li>
+                <li><strong>Food and Cooking Facilities:</strong>
+                    <ul>
+                        <li>Hygienic and tasty food from the in-house mess.</li>
+                        <li>Kitchen usage with a gas facility.</li>
+                    </ul>
+                </li>
+                <li><strong>Utilities:</strong>
+                    <ul>
+                        <li>Corporation water.</li>
+                        <li>Solar water heater.</li>
+                        <li>Water purifier in the room.</li>
+                    </ul>
+                </li>
+                <li><strong>Maintenance:</strong>
+                    <ul>
+                        <li>Regular cleaning services.</li>
+                        <li>Vehicle cleaning facility (paid basis).</li>
+                    </ul>
+                </li>
+                <li><strong>Safety and Security:</strong>
+                    <ul>
+                        <li>No guests or delivery personnel allowed in the guest area.</li>
+                        <li>CCTV security coverage.</li>
+                        <li>Entry via passcode for premises and lift.</li>
+                        <li>No liquor, doping, smoking, or drugs allowed.</li>
+                        <li>Operated by the owner for added security.</li>
+                    </ul>
+                </li>
+            </ul><p>             <br>          </p>
+        </div>
+
+        <!-- Features Section -->
+        <div id="features" class="content">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Comfort and Convenience:</strong>
+                    <ul>
+                        <li>Bed mattress, storage, WiFi, electricity, common fridge, and automatic washing machine included in costs.</li>
+                        <li>Large windows for ample light and ventilation.</li>
+                        <li>Mosquito nets on windows of rooms and bathrooms.</li>
+                    </ul>
+                </li>
+                <li><strong>Facilities for Recreation and Work:</strong>
+                    <ul>
+                        <li>Mini gym and garden for yoga.</li>
+                        <li>Peaceful and work-oriented crowd atmosphere.</li>
+                    </ul>
+                </li>
+                <li><strong>Toilet and Bathroom Standards:</strong>
+                    <ul>
+                        <li>Western toilet system (shared by two people in a room).</li>
+                        <li>Attached bathrooms to avoid common restrooms.</li>
+                    </ul>
+                </li>
+                <li><strong>Technology and Connectivity:</strong>
+                    <ul>
+                        <li>Firewall-enabled secure WiFi.</li>
+                        <li>Fibre connectivity for high-speed internet.</li>
+                    </ul>
+                </li>
+                <li><strong>Additional Amenities:</strong>
+                    <ul>
+                        <li>Parking shed for two-wheelers.</li>
+                        <li>Ironing board availability.</li>
+                    </ul>
+                </li>
+            </ul><p>             <br>          </p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div id="gallery" class="content">
+            <h2>Gallery</h2>
+            <div class="slideshow-container">
+                <div class="slides"><img src="images/final.png" alt="Building"></div>
+                <div class="slides"><img src="images/map.png" alt="Map"></div>
+                <div class="slides"><img src="images/Rooms.png" alt="Rooms"></div>
+                <div class="slides"><img src="images/nh_bed_4.jpg" alt="Double Sharing"></div>
+                <div class="slides"><img src="images/triple_1.jpg" alt="Triple Sharing"></div>
+                <div class="slides"><img src="images/kd.png" alt="Kitchen and Dining"></div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="setSlide(1)"></span>
+                <span class="dot" onclick="setSlide(2)"></span>
+                <span class="dot" onclick="setSlide(3)"></span>
+                <span class="dot" onclick="setSlide(4)"></span>
+                <span class="dot" onclick="setSlide(5)"></span>
+                <span class="dot" onclick="setSlide(6)"></span>
+            </div><p>             <br>          </p><p>             <br>          </p><p>             <br>          </p>
+        </div>
+
+
+        <!-- Contact Section -->
+        <div id="contact" class="content">
+            <h2>Contact</h2>
+            <p>Send WhatsApp message at <strong>7039021960</strong> for enquiry or call.</p>
+        </div>
+
+        <!-- Warnings Section -->
+        <div id="warnings" class="content">
+            <h2>⚠️Warnings</h2>
+            <p style="
+               background-color: #ffdddd; 
+               color: #b71c1c; 
+               font-size: 1.2rem; 
+               font-weight: bold; 
+               padding: 15px; 
+               border: 2px solid #b71c1c; 
+               border-radius: 8px; 
+               text-align: center; 
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+               ⚠️ <strong>Important Notice:</strong><br> DO NOT make ONLINE payment without visiting Nirmal PG and meeting with the owner.<br> 
+               Send WhatsApp message at <strong>7039021960</strong> for enquiry or call.<br> Any other number you see in Google reviews 
+               are spam and fake numbers.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nirmal PG. All rights reserved.</p>
+    </div>
+
+    <!-- JavaScript -->
+    <!-- JavaScript -->
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav button').forEach(btn => btn.classList.remove('active-tab'));
+            document.getElementById(id).classList.add('active');
+            document.querySelector(`[onclick="showContent('${id}')"]`).classList.add('active-tab');
+        }
+
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+
+        function setSlide(n) {
+            slideIndex = n - 1;
+            showSlides(slideIndex);
+        }
+
+        function showSlides(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            if (n >= slides.length) slideIndex = 0;
+            if (n < 0) slideIndex = slides.length - 1;
+
+            slides[slideIndex].style.display = 'block';
+            dots[slideIndex].classList.add('active');
+        }
+
+        showSlides(slideIndex);
+    </script>
+</body>
+</html>
+	
